@@ -1,0 +1,65 @@
+###
+POST http://localhost:5000/v1/auth/signup
+Content-Type: application/json
+
+{
+    "email":"ayush3@gmail.com",
+    "password":"12345678c@A",
+    "name":"Ayush"
+}
+###
+POST http://localhost:5000/v1/auth/signin
+Content-Type: application/json
+
+{
+    "email":"ayush3@gmail.com",
+    "password":"12345678"
+}
+###
+GET http://localhost:5000/v1/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcyNTFiM2JkLTVhYTYtNGVkZi1hOGU5LTdjZTcwMTFiNzI1YiIsImVtYWlsIjoiYXl1c2gzQGdtYWlsLmNvbSIsImlhdCI6MTcwOTY3MzU2Mn0.V3H7C0c-Uzf6-KSvgQTmBQ41HET2nt8_MBCZ6R8Jn1k
+###
+POST http://localhost:5000/v1/community
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcyNTFiM2JkLTVhYTYtNGVkZi1hOGU5LTdjZTcwMTFiNzI1YiIsImVtYWlsIjoiYXl1c2gzQGdtYWlsLmNvbSIsImlhdCI6MTcwOTY3MzU2Mn0.V3H7C0c-Uzf6-KSvgQTmBQ41HET2nt8_MBCZ6R8Jn1k
+
+{
+    "name":"Cricket Fandom Talks"
+}
+###
+GET http://localhost:5000/v1/community
+###
+
+###
+GET http://localhost:5000/v1/community/me/owner
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcyNTFiM2JkLTVhYTYtNGVkZi1hOGU5LTdjZTcwMTFiNzI1YiIsImVtYWlsIjoiYXl1c2gzQGdtYWlsLmNvbSIsImlhdCI6MTcwOTY3MzU2Mn0.V3H7C0c-Uzf6-KSvgQTmBQ41HET2nt8_MBCZ6R8Jn1k
+###
+GET http://localhost:5000/v1/community/me/member
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcyNTFiM2JkLTVhYTYtNGVkZi1hOGU5LTdjZTcwMTFiNzI1YiIsImVtYWlsIjoiYXl1c2gzQGdtYWlsLmNvbSIsImlhdCI6MTcwOTY3MzU2Mn0.V3H7C0c-Uzf6-KSvgQTmBQ41HET2nt8_MBCZ6R8Jn1k
+###
+GET http://localhost:5000/v1/community/e992d7b0-6d47-480d-9b08-3e0df0a20d62/members
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcyNTFiM2JkLTVhYTYtNGVkZi1hOGU5LTdjZTcwMTFiNzI1YiIsImVtYWlsIjoiYXl1c2gzQGdtYWlsLmNvbSIsImlhdCI6MTcwOTY3MzU2Mn0.V3H7C0c-Uzf6-KSvgQTmBQ41HET2nt8_MBCZ6R8Jn1k
+
+###
+POST http://localhost:5000/v1/role
+Content-Type: application/json
+
+{
+    "name":"C"  
+}
+###
+GET http://localhost:5000/v1/role
+###
+POST http://localhost:5000/v1/member
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcyNTFiM2JkLTVhYTYtNGVkZi1hOGU5LTdjZTcwMTFiNzI1YiIsImVtYWlsIjoiYXl1c2gzQGdtYWlsLmNvbSIsImlhdCI6MTcwOTcwNTgyMH0.udQZyCIsBgxXJOvmdS_VRpgCd8Z_niskKAcpi39dh6o
+
+{
+    "community":"e992d7b0-6d47-480d-9b08-3e0df0a20d62",
+    "user":"8cb976ff-5043-40fe-8913-80693db7743d",
+    "role":"08fb7200-6a21-4478-a25f-3c2167269c76"    
+}
+###
+DELETE  http://localhost:5000/v1/member/620f23d5-d87a-44ed-bd37-3abe13db0b03
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcyNTFiM2JkLTVhYTYtNGVkZi1hOGU5LTdjZTcwMTFiNzI1YiIsImVtYWlsIjoiYXl1c2gzQGdtYWlsLmNvbSIsImlhdCI6MTcwOTcwODczOX0.5H4SNOe9gDquH6ZsohQ_QMZt-Cs8OuFcZLo4eAatcuw
